@@ -206,6 +206,11 @@ section {
     gap: 1rem;
 }
 
+.text-container {
+    font-size: 2rem;
+    text-align: justify;
+}
+
 /* ICONS */
 
 .icon{
