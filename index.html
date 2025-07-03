@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Funmbi's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Nao Nagashima</div>
+        <div class="logo">Funmbi Akande</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Nao Nagashima</div>
+        <div class="logo">Funmbi Akande</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -42,10 +42,10 @@
         </div> -->
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Nao Nagashima</h1>
+            <h1 class="title">Funmbi Akande</h1>
             <p class="section__text__p2">Software Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Nao_Nagashima_Resume_2023.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('assets/Resume_Funmbi Akande.pdf')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -57,34 +57,33 @@
                     src="./assets/linkedin.png" 
                     alt="My LinkedIn Profile"
                     class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/nao-nagashima/'">
+                    onclick="location.href='https://www.linkedin.com/in/funmbi-akande/'">
                 <img 
                     src="./assets/github.png" 
                     alt="My Github Profile"
                     class="icon" 
-                    onclick="location.href='https://github.com/NaoNagashima'">
+                    onclick="location.href='https://github.com/funmbia'">
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
     </section>
     <section id="about">
-        <p class="section__text__p1">Get to know you more</p>
+        <!-- <p class="section__text__p1">Get to know you more</p> -->
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <!-- <div calss="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profiel Picture" class="about-pic">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
             </div> -->
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education Icon" class="icon">
                         <h3>Education</h3>
-                        <p>Pursuing B.Sc. Bachelors Degree in Computer Science</p>
+                        <p>Pursuing HB.Sc. Bachelors Degree in Computer Science</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Welcome to my website! My name is Nao Nagashima and I am a third year computer science student enrolled 
-                        at the University of Toronto. I have studied in several programming languages which include: 
-                        java, javascript, python, assembly and C from several projects and im looking to learn more.</p>
+                    <p>Welcome! I am a third year computer science student enrolled ...</p>
                 </div>
             </div>
         </div>
@@ -96,7 +95,7 @@
         <div class="skills-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="skills-sub-title">Software Development</h2>
+                    <h2 class="skills-sub-title">Languages</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
@@ -115,14 +114,14 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
-                                <h3>C</h3>
-                                <p>Intermediate</p>
+                                <h3>HTML/CSS</h3>
+                                <p>Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
-                                <h3>RiscV Assembly</h3>
+                                <h3>C++</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
@@ -130,14 +129,35 @@
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
                                 <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>RiscV Assembly</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="skills-sub-title">Software Development</h2>
+                    <h2 class="skills-sub-title">Tools & Frameworks</h2>
                     <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Git, GitHub, GitLab</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
@@ -148,7 +168,7 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
-                                <h3>Git</h3>
+                                <h3>PowerBI, PowerAutomate</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
@@ -162,7 +182,14 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
-                                <h3>ArcGis Pro</h3>
+                                <h3>Azure</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Docker</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
