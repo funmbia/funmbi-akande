@@ -21,7 +21,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Funmbi Akande</div>
+        <div class="logo">FA</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -36,6 +36,7 @@
             </div>
         </div>
     </nav>
+
     <section id="profile">
         <!-- <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Jon Doe profile pic">
@@ -65,31 +66,47 @@
                     onclick="location.href='https://github.com/funmbia'">
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"> -->
     </section>
+
     <section id="about">
-        <!-- <p class="section__text__p1">Get to know you more</p> -->
+        <p class="section__text__p1">A Little</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <!-- <div calss="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
-            </div> -->
+            <div calss="section__pic-container">
+                <img src="./assets/experience.png" alt="Profile Picture" class="about-pic">
+            </div>
             <div class="about-details-container">
-                <div class="about-containers">
+                <div class="about-containers" style="margin-bottom: -0.5rem;">
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education Icon" class="icon">
                         <h3>Education</h3>
-                        <p>Pursuing HB.Sc. Bachelors Degree in Computer Science</p>
+                        <p>Pursuing HBSc. Bachelors Degree in Computer Science</p>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p>Welcome! I am a third year computer science student enrolled ...</p>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Education Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Software Developer for the I&IT Cluster of the Ontario Government</p>
+                        <p>~</p>
+                        <p>Cybersecurity Mentor and Research Lead for k2i Academy</p>
+                    </div>
                 </div>
+                <!-- <div class="text-container">
+                    <p>Welcome! I am a third year computer science student enrolled ...</p>
+                    <p>Interests include Data Science, AI, Design, Tennis, Reading</p>
+                </div> -->
             </div>
+        </div>
+        <div class="text-container">
+            <p>My main interests i.e. what I always talk about include Data Science, AI, Design, Tennis, Reading</p>
+            <p>Currently Reading The Sword of Kaigen</p>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
     </section>
-    <section id="skills">
+
+    <!-- <section id="skills">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Skills</h1>
         <div class="skills-details-container">
@@ -146,15 +163,29 @@
                                 <p>Basic</p>
                             </div>
                         </article>
+                         <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Swift</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="skills-sub-title">Tools & Frameworks</h2>
+                    <h2 class="skills-sub-title">Tools</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
                                 <h3>Git, GitHub, GitLab</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
@@ -175,13 +206,6 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
-                                <h3>Bash</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
-                            <div>
                                 <h3>Azure</h3>
                                 <p>Intermediate</p>
                             </div>
@@ -190,7 +214,7 @@
                             <img src="./assets/checkmark.png" alt="Skills icon" class="icon">
                             <div>
                                 <h3>Docker</h3>
-                                <p>Intermediate</p>
+                                <p>Basic</p>
                             </div>
                         </article>
                     </div>
@@ -198,7 +222,197 @@
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section> -->
+
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="tabs-container">
+            <button class="btn btn-color-2 tab-btn" data-tab="languages">Languages</button>
+            <button class="btn btn-color-2 tab-btn" data-tab="frameworks-tools">Frameworks & Tools</button>
+            <button class="btn btn-color-2 tab-btn" data-tab="design-cloud">Design & Cloud</button>
+        </div>
+        <div class="skills-details-container">
+            <!-- Languages Tab -->
+            <div class="about-containers tab-content" id="languages">
+            <div class="details-container">
+                <h2 class="skills-sub-title">Languages</h2>
+                <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Java</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>HTML/CSS</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>LaTeX</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Swift</h3>
+                    <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>RISC-V</h3>
+                    <p>Basic</p>
+                    </div>
+                </article>
+                </div>
+            </div>
+            </div>
+
+            <!-- Frameworks & Tools Tab -->
+            <div class="about-containers tab-content" id="frameworks-tools" style="display:none;">
+            <div class="details-container">
+                <h2 class="skills-sub-title">Frameworks & Tools</h2>
+                <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Git, GitHub</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Lunix / Unix</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>MongoDB</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Flask</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>React</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Power Automate</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Node.js</h3>
+                    <p>Basic</p>
+                    </div>
+                </article>
+                </div>
+            </div>
+            </div>
+
+            <!-- Design & Cloud Tab -->
+            <div class="about-containers tab-content" id="design-cloud" style="display:none;">
+            <div class="details-container">
+                <h2 class="skills-sub-title">Design & Cloud</h2>
+                <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Figma</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>PowerBI</h3>
+                    <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Azure</h3>
+                    <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>Docker</h3>
+                    <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                    <div>
+                    <h3>GCP</h3>
+                    <p>Basic</p>
+                    </div>
+                </article>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
+
+
+
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -241,20 +455,23 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
+
+
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:mails.to.nano@gmail.com">mails.to.nano@gmail.com</a></p>
+                <p><a href="mailto:akande.funmbi@gmail.com">akande.funmbi@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/nao-nagashima">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/funmbi-akande/'">LinkedIn</a></p>
             </div>
         </div>
     </section>
+    
     <script src="script.js"></script>
 </body>
 </html>

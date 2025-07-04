@@ -207,7 +207,7 @@ section {
 }
 
 .text-container {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
@@ -310,6 +310,7 @@ section {
 /* SKILL SECTION */
 
 #skills {
+    margin-top: 2rem;
     position: relative;
 }
 
@@ -335,9 +336,23 @@ section {
     justify-content: space-around;
 }
 
+.tabs-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -0.5rem;
+    justify-content: center;
+}
+
+.tab-btn {
+  width: auto;
+  margin-bottom: 0%;
+}
+
 article{
     display: flex;
-    width: 10rem;
+    /* width: 10rem; */
+    width: auto;
     justify-content: space-around;
     gap: 0.5rem;
 }
