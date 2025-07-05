@@ -9,12 +9,10 @@ function initSkillsTabs() {
   const tabs = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
 
-  // Hide all tab contents except the one for 'languages'
   tabContents.forEach(content => {
     content.style.display = content.id === 'languages' ? 'block' : 'none';
   });
 
-  // Set initial active tab (languages)
   tabs.forEach(tab => {
     if (tab.getAttribute('data-tab') === 'languages') {
       tab.classList.add('btn-color-1');
@@ -24,7 +22,6 @@ function initSkillsTabs() {
       tab.classList.add('btn-color-2');
     }
 
-    // Add click listeners to switch tabs
     tab.addEventListener('click', () => {
       tabs.forEach(t => {
         t.classList.remove('btn-color-1');
@@ -42,4 +39,24 @@ function initSkillsTabs() {
 
 window.addEventListener('DOMContentLoaded', () => {
   initSkillsTabs();
+});
+
+document.querySelectorAll('[data-modal-target]').forEach(container => {
+  container.addEventListener('click', () => {
+    const modalId = container.getAttribute('data-modal-target');
+    const modal = document.querySelector(modalId);
+    modal.style.display = 'block';
+  });
+});
+
+document.querySelectorAll('.close-button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.modal').style.display = 'none';
+  });
+});
+
+window.addEventListener('click', e => {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (e.target === modal) modal.style.display = 'none';
+  });
 });

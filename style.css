@@ -9,8 +9,67 @@
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  @media (max-width: 768px) {
+    .section-container,
+    .about-section-container,
+    .about-containers,
+    .skills-details-container,
+    .experience-detail-container,
+    .contact-info-upper-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .section__pic-container,
+    .details-container,
+    .about-details-container,
+    .article-container {
+      width: 90%;
+      margin: 1rem 0;
+    }
+  
+    .about-containers {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .project-img,
+    .modal-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .tabs-container {
+      flex-direction: column;
+    }
+  }
+
+  .section-container,
+.about-containers,
+.experience-detail-container,
+.skills-details-container,
+.contact-info-upper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
+    min-width: 600px;
+
 }
 
 html {
@@ -53,8 +112,8 @@ a {
 
 a:hover{
     color: gray;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+    /* text-decoration: underline;
+    text-underline-offset: 1rem; */
     text-decoration-color: rgb(181,181,181);
 }
 
@@ -150,7 +209,7 @@ a:hover{
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: 80vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -167,12 +226,13 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    position: relative;
 }
 
 .section__pic-container{
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin: auto 0;
 }
 
@@ -207,8 +267,12 @@ section {
 }
 
 .text-container {
-    font-size: 1.5rem;
+    font-size: 1.3em;
     text-align: justify;
+}
+
+.text-container p {
+    margin-bottom: 1rem;
 }
 
 /* ICONS */
@@ -230,7 +294,7 @@ section {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: auto;
     border-radius: 2rem;
 }
 
@@ -272,6 +336,10 @@ section {
     position: relative;
 }
 
+.about-section-container {
+    justify-content: center;
+}
+
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
@@ -285,6 +353,7 @@ section {
 
 .about-containers, .about-details-container{
     display: flex;
+    flex: 0.8;
 }
 
 .about-pic {
@@ -294,7 +363,7 @@ section {
 .arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 1rem;
 }
 
 .details-container {
@@ -367,11 +436,6 @@ article.icon {
     position: relative;
 }
 
-.color-container{
-        border-color: rgb(163, 163, 163);
-        background: rgb(250, 250, 250);
-}
-
 .project-img{
     border-radius: 2rem;
     width: 90%;
@@ -388,13 +452,68 @@ article.icon {
     border-color: rgb(163, 163, 163);
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10vh auto;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    width: 90%;
+    max-width: 60rem;
+    position: relative;
+    text-align: center;
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-img {
+    width: 40%;
+    border-radius: 1rem;
+    margin: 1rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(53, 53, 53);
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.details-container[data-modal-target]:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 /* CONTACT SECTION */
 
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 40vh;
 }
 
 .contact-info-upper-container{
