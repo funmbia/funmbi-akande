@@ -1,3 +1,4 @@
+// Hamburger Menu Functionality
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -5,6 +6,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
+// Skills Tabs
 function initSkillsTabs() {
   const tabs = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
@@ -41,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSkillsTabs();
 });
 
+// Modal functionality
 document.querySelectorAll('[data-modal-target]').forEach(container => {
   container.addEventListener('click', () => {
     const modalId = container.getAttribute('data-modal-target');

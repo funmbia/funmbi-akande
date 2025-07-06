@@ -1,17 +1,13 @@
 /* GENERAL */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
-}
-
-* {
     box-sizing: border-box;
-  }
+}
   
   body {
     overflow-x: hidden;
@@ -30,7 +26,7 @@
       text-align: center;
     }
   
-    .section__pic-container,
+    .about__pic-container,
     .details-container,
     .about-details-container,
     .article-container {
@@ -55,20 +51,22 @@
     }
   }
 
-  .section-container,
-.about-containers,
-.experience-detail-container,
-.skills-details-container,
-.contact-info-upper-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+    .section-container,
+    .about-containers,
+    .experience-detail-container,
+    .skills-details-container,
+    .contact-info-upper-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 
 
 body {
     font-family: 'Poppins', sans-serif;
-    min-width: 600px;
+    min-width: 50vw;
+    overflow-x: hidden;
+    max-width: 100vw;
 
 }
 
@@ -229,13 +227,6 @@ section {
     position: relative;
 }
 
-.section__pic-container{
-    display: flex;
-    height: 300px;
-    width: 300px;
-    margin: auto 0;
-}
-
 .section__text {
     align-self: center;
     text-align: center;
@@ -356,8 +347,20 @@ section {
     flex: 0.8;
 }
 
+.about__pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto -3rem;
+}
+
 .about-pic {
+    width: 100%;
+    height: auto;
     border-radius: 2rem;
+    object-fit: cover;
 }
 
 .arrow{
@@ -430,7 +433,7 @@ article.icon {
     cursor: default;
 }
 
-/* PROJECTS SECTION */
+/* PROJECTS + MODALS SECTION */
 
 #projects {
     position: relative;
@@ -516,28 +519,35 @@ article.icon {
     height: 40vh;
 }
 
-.contact-info-upper-container{
+.contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: (250, 250, 250, 250);
+    border: rgb(163, 163, 163) 0.1rem solid;
+    background: rgba(250, 250, 250, 1);
     margin: 2rem auto;
     padding: 0.5rem;
+    flex-wrap: wrap;
+    max-width: 90%;
+    overflow-wrap: break-word;
 }
 
-.contact-info-container{
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
+    flex-wrap: wrap;
+    word-break: break-word;
+    text-align: center;
 }
 
-.contact-info-container p{
+.contact-info-container p {
     font-size: larger;
+    word-break: break-word;
 }
+
 
 .contact-icon{
     cursor:default;
